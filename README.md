@@ -66,7 +66,6 @@ Inference
 python inference.py
 ```
 
-
 ## Methods and Improvements
 
 To improve segmentation performance, the following techniques were applied:
@@ -91,8 +90,9 @@ To improve segmentation performance, the following techniques were applied:
 
 Training results for different configurations:
 
+
 | Encoder                     | Epochs | Batch Size | Data Augmentation | Loss Function | Model Type | Resize | Test IoU |
-| ----------------------------- | -------- | ------------ | ------------------- | --------------- | ------------ | -------- | ---------- |
+| --------------------------- | ------ | ---------- | ----------------- | ------------- | ---------- | ------ | -------- |
 | ResNet16                    | 200    | 16         | No                | Cross Entropy | U-Net      | 256    | 0.67434  |
 | ResNet50                    | 300    | 16         | No                | Cross Entropy | U-Net      | 256    | 0.70367  |
 | DenseNet201                 | 500    | 8          | No                | Dice + CE     | U-Net      | 256    | 0.67867  |
@@ -123,10 +123,3 @@ CARLA_Segmentation/
 ├── submit/        # Code uploaded to Kaggle
 ├── train/           # Training code. Include model structures, Loss function.
 ```
-
----
-
-### Example Image
-
-![Example Screenshot](https://github.com/Kane-ouvic/CARLA_Segmentation/blob/main/result/imgs/1.png)
-
